@@ -7,6 +7,30 @@
     <title>Document</title>
 
     <style>
+        /* Style for Header of the website */
+        .header {
+          margin-left: 240px;
+          position: abosulute;
+          left: 0; right: 0; top: 1;
+          height: [header-height];
+          background-color: #ffb300bf;
+        }
+
+        img {
+          margin-left: 550px;
+          position: center;
+          border-radius: 50%;
+        }
+
+
+        /*Style for Footer of the Website*/
+        .footer {
+          margin-left: 240px;
+          position: absolute; 
+          left: 0 ; right: 0; bottom: 1; 
+          height:[footer-height];
+          background-color: #ffb300bf;
+        }
 
         .sidebar {
           margin: 0;
@@ -76,7 +100,8 @@ border: solid;
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body style="background-color:white;">
-</div>
+
+<!----------------------------SIDE BAR----------------------------------------------------------------------->
 <div class="sidebar">
     <h1>Options</h1>
     <ul>
@@ -89,6 +114,13 @@ border: solid;
 
 </ul>
   </div>
+
+  <!------------------------------------------------Header--------------------------------------------------> 
+<div class="header">
+  <img src="Duy.jpg" alt="Restaurant-icon" style="width:150px">
+</div>
+
+  
   <div class = "content">
     <div id = "Soda" class = "parent">
         <img src = "BlueCheeseBurger.jfif" width = "200px" height="200px" alt = "Blue Cheese Burger">
@@ -124,4 +156,28 @@ border: solid;
   </div>
   </div>
 </body>
+
+<!-------------------------------------------Footer of the website-------------------------------------->
+  <div class="footer">
+    <div style="width: 400px; float: left; height: 250px; background: transparent; margin-right:5px">
+      <h1>About Us:</h1>
+      <p>This website was mainly created for project 1 in our CS 343 class.
+          We are creating this website as an ordering system, with seperate
+          screens for selecting and customizing orders, displaying sales information, etc.
+      </p>
+    </div>
+  
+    <div style="width: 400px; float: left; height: 150px; background: transparent; margin-left:100px">
+      <h1>Contact Us:</h1>
+      <ul>
+        <li><strong>Monday: </strong> 10am - 9pm</li>
+        <li><strong>Tuesday: </strong> 10am - 9pm</li>
+        <li><strong>Wednesday: </strong> 10am - 9pm</li>
+        <li><strong>Thursday: </strong> 10am - 9pm</li>
+        <li><strong>Friday: </strong> 10am - 9pm</li>
+        <li><strong>Saturday: </strong> 10am - 5pm</li>
+        <li><strong>Sunday: </strong> Close</li>
+      </ul>
+    </div>
+  
 </html>
