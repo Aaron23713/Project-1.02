@@ -7,7 +7,74 @@
     <title>Document</title>
 
     <style>
+       /* Style for Header of the website */
+       .header {
+          margin-left: 240px;
+          position: abosulute;
+          left: 0; right: 0; top: 0;
+          height: [header-height];
+          background-color: #ffb300bf;
+        }
 
+        img {
+          margin-left: 550px;
+          position: center;
+          border-radius: 50%;
+        }
+
+
+        /*Style for Footer of the Website*/
+        .footer {
+          margin-left: 240px;
+          position: absolute; 
+          left: 0 ; right: 0; bottom: 1; 
+          height:[footer-height];
+          background-color: #ffb300bf;
+        }
+
+
+        /*Checkout Box*/
+        .checkout-block {
+          width: 500px;
+          height: 600px;
+          margin-left: 610px;
+          margin-top: 100px;
+          margin-bottom: 100px;
+          border: 3px solid black;
+          background-color: white;
+        }
+        .top-border {
+          border-bottom: 5px solid black;
+          margin-top: 5px;
+          text-align: center;
+          width: 100%;
+        }
+
+        .quantity-border {
+          border-right: 5px solid black;
+          margin-top: 0px;
+          height: 77%;
+          position: absolute;
+        }
+
+        .order-name {
+          border-bottom: 5px solid black;
+          margin-top: 10px;
+          text-align: center;
+          width: 100%;
+        }
+
+        .checkout-button {
+          background-color: green;
+          border: none;
+          color: white;
+          text-align: center;
+          padding: 15px 32px;
+          cursor: pointer;
+        }
+        /*---------------------------------*/
+
+        /*Side Bar*/
         .sidebar {
           margin: 0;
           padding: 0;
@@ -69,6 +136,57 @@
     </li>
 
 </ul>
+  </div>
+<!------------------------------------------------Header---------------------------------------------------> 
+<div class="header">
+  <img src="Duy.jpg" alt="Restaurant-icon" style="width:150px">
+</div>
+
+<!------------------------------------------------Checkout------------------------------------------------->
+<div class="checkout-block">
+  <div class="top-border">
+    <p1><strong>Micky Dining</strong></p1>
+  </div>
+
+  <div class="quantity-border"> 
+    <p1><strong>Quantity</strong></p1>
+  </div>
+
+  <div class="order-name">
+    <p1><strong>YOUR ORDER</strong></p1>
+  </div>
+
+  <button class="checkout-block">Order</button>
+</div>
+<!-------------------------------------------------Footer-------------------------------------------------->
+<div class="footer">
+  <div style="width: 400px; float: left; height: 250px; background: transparent; margin-right:5px">
+    <h1>About Us:</h1>
+    <p>This website was mainly created for project 1 in our CS 343 class.
+        We are creating this website as an ordering system, with seperate
+        screens for selecting and customizing orders, displaying sales information, etc.
+    </p>
+    </div>
+    <div style="width: 400px; float: left; height: 150px; background: transparent; margin-left:100px">
+      <h1>Contact Us:</h1>
+      <ul>
+        <li><strong>Monday: </strong> 10am - 9pm</li>
+        <li><strong>Tuesday: </strong> 10am - 9pm</li>
+        <li><strong>Wednesday: </strong> 10am - 9pm</li>
+        <li><strong>Thursday: </strong> 10am - 9pm</li>
+        <li><strong>Friday: </strong> 10am - 9pm</li>
+        <li><strong>Saturday: </strong> 10am - 5pm</li>
+        <li><strong>Sunday: </strong> Close</li>
+      </ul>
+    </div>
+  
+    <h1>Information</h1>
+    <ul>
+      <li><strong>Address: </strong> 800 S Main Street, VA, Harrisonburg, 22801</li>
+      <li><strong>Social Media: </strong> <a href="https://www.facebook.com/shi.duy.thien">www.OurMainPage.com</a></li>
+      <li><strong>Email @: </strong><a href="#Example.com">this_look_fake@gmail.com</a></li>
+      <li><strong>Phone number: </strong>123-456-7890</li>
+    </ul>
   </div>
 </body>
 </html>
