@@ -7,74 +7,111 @@
     <title>Document</title>
 
     <style>
-body {
-  background-image: url('example_img_girl.jpg');
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position-y:-160px;
-}
-        .sidebar {
-          margin: 0;
-          padding: 0;
-          width: 240px;
-          background-color: #ffb300bf;
-          position: fixed;
-          height: 100%;
-          overflow: auto;
-        }
-        
-        .sidebar a {
-          display: block;
-          color: black;
-          padding: 16px;
-          text-decoration: none;
-        }
-          
-        .sidebar a:hover:not(.active) {
-          background-color: #555;
-          color: white;
-        }
-        
-        div.content {
-          margin-left: 240px;
-          padding: 1px 16px;
-          height: 1000px;
-        }
-        
-        @media screen and (max-width: 700px) {
-          .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-          }
-          .sidebar a {float: left;}
-          div.content {margin-left: 0;}
-        }
-        
-        @media screen and (max-width: 400px) {
-          .sidebar a {
-            text-align: center;
-            float: none;
-          }
-        }
-          
-              </style>
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body style="background-image: url('Background.jpg');">
-</div>
-<div class="sidebar">
-    <h1>Options</h1>
-    <ul>
-        <li><a href="Project1Home.html">Home</a></li>
-    <li><a href="Project1MainSide.html">Main/Side</a></li>
-    <li><a href="Project1Drink.html">Drink</a>  
-    <li><a href = "Project1Dessert.html">Dessert</a></li>
-    <li><a href= "Project1Checkout.html">Checkout</a></li>
-    </li>
+    @font-face {
+      font-family: 'MemphisRiver';
+      src: url(MemphisRiver.ttf);
+    }
 
-</ul>
+
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+        /* Style for Header of the website */
+        .header {
+          margin-left: 240px;
+          position: abosulute;
+          left: 0; right: 0; top: 1;
+          height: [header-height];
+          background-color: transparent;
+        }
+
+        img {
+          border-radius: 50%;
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          padding: 20px
+        }
+
+        /*Restaurant Description*/
+
+
+
+        /*Style for Footer of the Website*/
+        .footer {
+          margin-left: 240px;
+          position: absolute; 
+          left: 0 ; right: 0; bottom: 0; 
+          height:[footer-height];
+          background-color: #ffb300bf;
+        }
+
+        .bg-body {
+          background-image: url("Background.jpg");
+          /* Add the blur effect */
+          filter: blur(8px);
+          -webkit-filter: blur(8px);
+          
+          /* Full height */
+          height: 100%; 
+          
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .bg-text {
+          font-family: 'MemphisRiver';
+          color: white;
+          font-weight: bold;
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+        }
+      
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<!---------------------------------------------TOP BAR----------------------------------------------------->
+<nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="Project1Home.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="Project1MainSide.html">Main/Side <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Project1Drink.html">Drink</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Project1Dessert.html">Dessert</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Project1Checkout.html">Check-Out</a>
+      </li>
+    </ul>
   </div>
+</nav>
+<div class="bg-body"></div>
+
+<img src="Mickey.jpg" alt="Restaurant-icon" style="width:300px" class="center">
+
+<div class="bg-text">
+  <h1 style="font-size: 100px">Mickey Dining</h1>
+</div>
 
 </body>
 </html>
