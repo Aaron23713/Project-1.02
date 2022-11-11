@@ -21,8 +21,8 @@ function updateCartItemDoubleHamburger() {
     console.log(currentCartItem.length);
 }
 }
-function updateCartPrice() {
-    var image = document.getElementById('image');
+function updateCartBlueCheeseBurgerPrice() {
+    var image = document.getElementById('Blue Cheese Burger Price');
     document.getElementsByName
    currentCartPrice.push(image);
    for(let i = 0; i < currentCartPrice.length; i++){
