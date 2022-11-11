@@ -16,12 +16,6 @@
           background-color: #ffb300bf;
         }
 
-        .img2 {
-          margin-left: 550px;
-          position: center;
-          border-radius: 50%;
-        }
-
 
         /*Style for Footer of the Website*/
         .footer {
@@ -60,22 +54,7 @@
           height: 1000px;
         }
         
-        @media screen and (max-width: 700px) {
-          .sidebar {
-            width: 100%;
-            height: auto;
-            position: relative;
-          }
-          .sidebar a {float: left;}
-          div.content {margin-left: 0;}
-        }
-        
-        @media screen and (max-width: 400px) {
-          .sidebar a {
-            text-align: center;
-            float: none;
-          }
-        }
+ 
         .parent {
 
 width: auto;
@@ -122,9 +101,10 @@ border: solid;
 </div>
 
   <div class = "content">
-    <div id = "Soda" class = "parent">
-        <img id = "image" img src = "BlueCheeseBurger.jfif" width = "200px" height="200px" alt = "Blue Cheese Burger" onclick ="updateCart()">
-      <p>Blue Cheese Burger: $7.49</p>
+    <div id = "Soda" class = "parent" onclick="updateCart(); Storage;">
+        <img id = "image" img src = "BlueCheeseBurger.jfif" width = "200px" height="200px" alt = "Blue Cheese Burger">
+      <p id="hello"><li>Blue Cheese Burger:</li><li>$7.49</li></p>
+      
     </div>
     <div id = "Soda" class = "parent">
       <img src = "Veggie Burger.jpg" width = "200px" height="200px"alt = "Veggie Burger">
