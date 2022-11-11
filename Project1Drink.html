@@ -21,7 +21,7 @@
         }
 
         .bg-body {
-          background-image: url("Background.jpg");
+          background-image: url("drinks_background.jpg");
           /* Add the blur effect */
           filter: blur(8px);
           -webkit-filter: blur(8px);
@@ -42,7 +42,7 @@
           transform: translate(-50%, -110%);
           text-align: center;
           position: absolute;
-          
+
         }
         .parent {
           height: auto;
@@ -55,7 +55,33 @@
           margin-right: 13px;     
           border: solid;
         }
-  
+/* Pop Up*/
+.popup {
+           width: 400px;
+           background: white;
+           border-radius: 6px;
+           position: absolute;
+           top: 0;
+           left: 50%;
+           transform: translate(-50%, -50%) scale(0.1);
+           text-align: center;
+           padding: 0 30px 30px;
+           color: black;
+           visibility: hidden;
+           transition: transform 0.4s, top 0.4s;
+        }
+        .open-popup {
+          visibility: visible;
+          top: 50%;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        .popup img{
+          width: 130px;
+          margin-top: -50px;
+          border-radius: 50%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          background-color: rgb(0, 220, 29);
+        }
         #Soda {
           width: 19%;
         }
@@ -90,36 +116,41 @@
 
   <div class = "content">
   <div id = "Soda" class = "parent">
-      <img src = "Sprite.jpg" width = "250px" height="200px" alt = "Sprite">
+      <img src = "Sprite.jpg" width = "250px" height="200px" alt = "Sprite" onclick="openPopup()">
       <p>Sprite 20oz: $2.00</p>
   </div>
   <div id = "Soda" class = "parent">
-    <img src = "Coke.jpg" width = "200px" height="200px"alt = "Coke">
+    <img src = "Coke.jpg" width = "200px" height="200px"alt = "Coke" onclick="openPopup()">
     <p>Coke 20oz: $2.00</p>
 </div>
 <div id = "Soda" class = "parent">
-    <img src = "Faygo.jpeg" width = "200px" height="200px" alt = "Cotton Candy Faygo">
+    <img src = "Faygo.jpeg" width = "200px" height="200px" alt = "Cotton Candy Faygo" onclick="openPopup()">
     <p>Faygo 24z: $2.00</p>
 </div>
 <div id = "Soda" class = "parent">
-    <img src = "Fiji Water.jpg" width = "200px" height="200px" alt = "Fiji Water">
+    <img src = "Fiji Water.jpg" width = "200px" height="200px" alt = "Fiji Water" onclick="openPopup()">
     <p>Fiji Water 24oz: $2.00</p>
 </div>
 <div id = "Soda" class = "parent">
-    <img src = "GIngerale.png"width = "200px" height="200px" alt = "GIngerale" ;>
+    <img src = "GIngerale.png"width = "200px" height="200px" alt = "GIngerale" onclick="openPopup()">
     <p>Shweppes GIngerale 20oz: $2.00</p>
 </div>
 <div id = "Soda" class = "parent">
-    <img src = "Mountain Dew.jpg"width = "200px" height="200px" alt = "Mountain Dew" ;>
+    <img src = "Mountain Dew.jpg"width = "200px" height="200px" alt = "Mountain Dew" onclick="openPopup()">
     <p>MTN-DEW Major Melon 20oz: $2.00</p>
 </div>
 <div id = "Soda" class = "parent">
-    <img src = "Pepsi.png"width = "200px" height="200px" alt = "Pepsi" ;>
+    <img src = "Pepsi.png"width = "200px" height="200px" alt = "Pepsi" onclick="openPopup()">
     <p>Pepsi 20oz: $2.00</p>
 </div>
 <div id = "Soda" class = "parent">
-    <img src = "Orange Juice.jpg"width = "200px" height="200px" alt = "Orange Juice" ;>
+    <img src = "Orange Juice.jpg"width = "200px" height="200px" alt = "Orange Juice" onclick="openPopup()">
     <p>Orange Juice 12oz: $2.00</p>
+</div>
+<div class="popup" id="popup">
+  <img src="check.png">
+  <h2>Your Order Has Been Submitted</h2>
+  <button type="button" onclick="closePopup()">OK</button>
 </div>
 </div>
 
@@ -133,7 +164,7 @@
   </div>
 
   <div style="width: 400px; float: left; height: 150px; background: transparent; margin-left:100px">
-    <h1>Contact Us:</h1>
+    <h1>Open hours:</h1>
     <ul>
       <li><strong>Monday: </strong> 10am - 9pm</li>
       <li><strong>Tuesday: </strong> 10am - 9pm</li>
@@ -153,5 +184,16 @@
     <li><strong>Phone number: </strong>123-456-7890</li>
   </ul>
 </div>
+
+<script>
+  let popup = document.getElementById("popup");
+  function openPopup() {
+    popup.classList.add("open-popup");
+  }
+
+  function closePopup() {
+    popup.classList.remove("open-popup");
+  }
+</script>
 </body>
 </html>

@@ -26,7 +26,7 @@
           /* Add the blur effect */
           filter: blur(8px);
           -webkit-filter: blur(8px);
-          
+
           
           /* Full height */
           height: 100%; 
@@ -55,8 +55,37 @@
           display: inline-flex;
           margin-top: 100px;
           margin-right: 13px;     
-          border: solid;
-}
+          border: solid;   
+        }
+
+
+          /* Pop Up*/
+          .popup {
+           width: 400px;
+           background: white;
+           border-radius: 6px;
+           position: absolute;
+           top: 0;
+           left: 50%;
+           transform: translate(-50%, -50%) scale(0.1);
+           text-align: center;
+           padding: 0 30px 30px;
+           color: black;
+           visibility: hidden;
+           transition: transform 0.4s, top 0.4s;
+        }
+        .open-popup {
+          visibility: visible;
+          top: 50%;
+          transform: translate(-50%, -50%) scale(1);
+        }
+        .popup img{
+          width: 130px;
+          margin-top: -50px;
+          border-radius: 50%;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          background-color: rgb(0, 220, 29);
+        }
 
 #Soda {
   
@@ -97,41 +126,56 @@
 
   <div class = "content">
     <div id = "Soda" class = "parent">
-        <img id = "image" img src = "BlueCheeseBurger.jfif" width = "200px" height="200px" alt = "Blue Cheese Burger" onclick ="updateCart()">
+      <img src = "BlueCheeseBurger.jfif" width = "200px" height="200px" alt = "Blue Cheese Burger" onclick="openPopup()">
       <p>Blue Cheese Burger: $7.49</p>
     </div>
     <div id = "Soda" class = "parent">
-      <img src = "Veggie Burger.jpg" width = "200px" height="200px"alt = "Veggie Burger">
+      <img src = "Veggie Burger.jpg" width = "200px" height="200px"alt = "Veggie Burger" onclick="openPopup()">
       <p>Veggie Burger: $7.49</p>
   </div>
   <div id = "Soda" class = "parent">
-      <img src = "Salmon Burger.jpg" width = "200px" height="200px" alt = "Salmon Burger">
+      <img src = "Salmon Burger.jpg" width = "200px" height="200px" alt = "Salmon Burger" onclick="openPopup()">
       <p>Salmon Burger: $7.49</p>
   </div>
   <div id = "Soda" class = "parent">
-      <img src = "Plain Burger.jfif" width = "200px" height="200px" alt = "Plain Burger">
+      <img src = "Plain Burger.jfif" width = "200px" height="200px" alt = "Plain Burger" onclick="openPopup()">
       <p>Build-your-own  Hamburger: $4.49</p>
   </div>
   <div id = "Soda" class = "parent">
-      <img src = "Bacon Burger.png"width = "200px" height="200px" alt = "Bacon Burger" ;>
+      <img src = "Bacon Burger.png"width = "200px" height="200px" alt = "Bacon Burger" onclick="openPopup()">
       <p>Bacon Cheese-Burger: $7.49</p>
   </div>
   <div id = "Soda" class = "parent">
-      <img src = "Double Burger.jpeg"width = "200px" height="200px" alt = "Double Burger" ;>
+      <img src = "Double Burger.jpeg"width = "200px" height="200px" alt = "Double Burger" onclick="openPopup()">
       <p>Double Hamburger: $10.49</p>
   </div>
   <div id = "Soda" class = "parent">
-      <img src = "Mushroom Burger.jfif"width = "200px" height="200px" alt = "Mushroom Burger" ;>
+      <img src = "Mushroom Burger.jfif"width = "200px" height="200px" alt = "Mushroom Burger" onclick="openPopup()">
       <p>Mushroom-Burger: $7.49</p>
   </div>
   <div id = "Soda" class = "parent">
-      <img src = "Turkey Burger.jfif"width = "200px" height="200px" alt = "Turker Burger" ;>
+      <img src = "Turkey Burger.jfif"width = "200px" height="200px" alt = "Turker Burger" onclick="openPopup()">
       <p>Turkey Burger: $7.49</p>
+  </div>
+  <div class="popup" id="popup">
+    <img src="check.png">
+    <h2>Your Order Has Been Submitted</h2>
+    <button type="button" onclick="closePopup()">OK</button>
   </div>
   <script src = "cart.js"></script>
   </div>
 </body>
 
+<script>
+  let popup = document.getElementById("popup");
+  function openPopup() {
+    popup.classList.add("open-popup");
+  }
+
+  function closePopup() {
+    popup.classList.remove("open-popup");
+  }
+</script>
 <!-------------------------------------------Footer of the website-------------------------------------->
 <div class="footer">
   <div style="width: 400px; float: left; height: 250px; background: transparent; margin-left:100px">
@@ -143,7 +187,7 @@
   </div>
 
   <div style="width: 400px; float: left; height: 150px; background: transparent; margin-left:100px">
-    <h1>Contact Us:</h1>
+    <h1>Open Hours:</h1>
     <ul>
       <li><strong>Monday: </strong> 10am - 9pm</li>
       <li><strong>Tuesday: </strong> 10am - 9pm</li>
@@ -163,4 +207,6 @@
     <li><strong>Phone number: </strong>123-456-7890</li>
   </ul>
 </div>
+
+
 </html>
