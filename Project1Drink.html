@@ -13,7 +13,7 @@
       }
         /*Style for Footer of the Website*/
         .footer {
-        margin-left: 240px;
+        margin-left: 0px;
         position: absolute; 
         left: 0 ; right: 0; bottom: 1; 
         height:[footer-height];
@@ -25,7 +25,7 @@
           position: center;
           border-radius: 50%;
         }
-        
+
         .bg-body {
           background-image: url("Background.jpg");
           /* Add the blur effect */
@@ -42,28 +42,27 @@
         }
 
         div.content {
-          margin-left: 240px;
-          padding: 1px 16px;
-          height: 1000px;
-     
+          margin-left: 800px;
+          margin-bottom: 600xpx;
+          width: 1500px;
+          transform: translate(-50%, -110%);
+          text-align: center;
+          position: absolute;
         }
         .parent {
-
-          width: auto;
           height: auto;
+          margin-left: 10px;
           border: 4px dashed black;
-          flex-direction:column;
-          align-items:flex-start;
+          background-color: white;
+          flex-direction: column;
           display: inline-flex;
-          margin: top 250px;
-          margin-right:12px;
-          overflow-x:auto;
-          border:solid;
-
+          margin-top: 100px;
+          margin-right: 13px;     
+          border: solid;
         }
   
         #Soda {
-          width: 20%;
+          width: 19%;
         }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -97,7 +96,7 @@
   <div class = "content">
     <div class="bg-body"></div>
   <div id = "Soda" class = "parent">
-      <img src = "Sprite.jpg" width = "200px" height="200px" alt = "Sprite">
+      <img src = "Sprite.jpg" width = "250px" height="200px" alt = "Sprite">
       <p>Sprite 20oz: $2.00</p>
   </div>
   <div id = "Soda" class = "parent">
@@ -131,7 +130,7 @@
 </div>
 
 <div class="footer">
-  <div style="width: 400px; float: left; height: 250px; background: transparent; margin-right:5px">
+  <div style="width: 400px; float: left; height: 250px; background: transparent; margin-left:100px">
     <h1>About Us:</h1>
     <p>This website was mainly created for project 1 in our CS 343 class.
         We are creating this website as an ordering system, with seperate
