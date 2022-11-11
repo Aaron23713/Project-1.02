@@ -116,7 +116,7 @@
 
 <div class = "content">
   <div id = "Soda" class = "parent" onclick="Storage()">
-    <img id = "image" img src = "Cheesecake.jfif" width = "200px" height="200px" alt = "Red Velvet Cheesecake">
+    <img id = "image" img src = "Cheesecake.jfif" width = "200px" height="200px" alt = "Red Velvet Cheesecake" onclick="openPopup()">
   <input id = "name" value = "Red Velvet Cheesecake:$4.49">
   <input id = "priceDessert" type = "number" value = "4.49">
   </div>
@@ -148,6 +148,12 @@
     <img src = "Oreo Cheesecake.jfif"width = "200px" height="200px" alt = "Oreo Cheesecake" onclick="openPopup()">
     <p>Oreo Cheesecake: $4.49</p>
   </div>
+  <div class="popup" id="popup">
+    <img src="check.png">
+    <h2>Your Order Has Been Submitted</h2>
+    <button type="button" onclick="closePopup()">OK</button>
+  </div>
+
   </div>
 
 <div class="footer">
