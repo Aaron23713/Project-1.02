@@ -16,8 +16,7 @@
         .footer {
           margin-left: 0px;
           position: absolute; 
-          left: 0 ; right: 0; bottom: 1; 
-          height:[footer-height];
+          left: 0 ; right: 0; bottom: -300px; 
           background-color:#f5bb33bf;
         }
 
@@ -39,7 +38,7 @@
 
         div.content {
           margin-left: 800px;
-          margin-bottom: 600xpx;
+          margin-bottom: 600px;
           width: 1500px;
           transform: translate(-50%, -110%);
           text-align: center;
@@ -99,8 +98,6 @@
 </head>
 <body>
 
-<!---------------------------------------------TOP BAR----------------------------------------------------->
-<nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
   <a class="navbar-brand" href="Project1Home.html">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -121,95 +118,89 @@
       </li>
     </ul>
   </div>
-</nav>
 
 <div class="bg-body"></div>
 
   <div class = "content">
     <div class = "parent">
-      <img src = "BlueCheeseBurger.jfif" width = "200" height="200" alt = "Blue Cheese Burger" onclick="openPopup();updateCartItemBlueCheeseBurger();">
+      <img src = "BlueCheeseBurger.jfif" width = "200" height="200" alt = "Blue Cheese Burger" onclick= "openPopup();updateCartItemBlueCheeseBurger();">
       <p>Blue Cheese Burger: $7.49</p>
-      <var id = "Blue Cheese Burger" var = "Blue Cheese Burger $7.49">
-      <var id = "Blue Cheese Burger Price" var ="7.49">
     </div>
     <div class = "parent">
-      <img src = "Veggie-Burger.jpg" width = "200" height="200"alt = "Veggie Burger" onclick="openPopup()">
+      <img src = "Veggie-Burger.jpg" width = "200" height="200" alt = "Veggie Burger" onclick= "openPopup()">
       <p>Veggie Burger: $7.49</p>
   </div>
   <div class = "parent">
-      <img src = "Salmon-Burger.jpg" width = "200" height="200" alt = "Salmon Burger" onclick="openPopup()">
+      <img src = "Salmon-Burger.jpg" width = "200" height="200" alt = "Salmon Burger" onclick= "openPopup()">
       <p>Salmon Burger: $7.49</p>
   </div>
   <div class = "parent">
-      <img src = "Plain-Burger.jfif" width = "200" height="200" alt = "Plain Burger" onclick="openPopup()">
+      <img src = "Plain-Burger.jfif" width = "200" height="200" alt = "Plain Burger" onclick= "openPopup()">
       <p>Plain Hamburger: $4.49</p>
   </div>
   <div class = "parent">
-      <img src = "Bacon-Burger.png"width = "200" height="200" alt = "Bacon Burger" onclick="openPopup()">
+      <img src = "Bacon-Burger.png" width = "200" height="200" alt = "Bacon Burger" onclick= "openPopup()">
       <p>Bacon Cheese-Burger: $7.49</p>
   </div>
   <div class = "parent">
-      <img src = "Double-Burger.jpeg"width = "200" height="200" alt = "Double Burger" onclick="openPopup()">
+      <img src = "Double-Burger.jpeg" width = "200" height="200" alt = "Double Burger" onclick= "openPopup()">
       <p>Double Cheeseburger: $10.49</p>
   </div>
   <div class = "parent">
-      <img src = "Mushroom-Burger.jfif"width = "200" height="200" alt = "Mushroom Burger" onclick="openPopup()">
+      <img src = "Mushroom-Burger.jfif" width = "200" height="200" alt = "Mushroom Burger" onclick= "openPopup()">
       <p>Mushroom-Burger: $7.49</p>
   </div>
   <div class = "parent">
-      <img src = "Turkey-Burger.jfif"width = "200" height="200" alt = "Turker Burger" onclick="openPopup()">
+      <img src = "Turkey-Burger.jfif" width = "200" height="200" alt = "Turker Burger" onclick= "openPopup()">
       <p>Turkey Burger: $7.49</p>
   </div>
   <div class="popup" id="popup">
-    <img src="check.png">
+    <img src= "check.png" alt = "Check">
     <h2>Your Order Has Been Submitted</h2>
-    <button type="button" onclick="closePopup()">OK</button>
+    <button type= "button" onclick= "closePopup()">OK</button>
   </div>
   <script src = "cart.js"></script>
   </div>
-</body>
-
-<script>
-  let popup = document.getElementById("popup");
-  function openPopup() {
-    popup.classList.add("open-popup");
-  }
-
-  function closePopup() {
-    popup.classList.remove("open-popup");
-  }
-</script>
-<!-------------------------------------------Footer of the website-------------------------------------->
-<div class="footer">
-  <div style="width: 400px; float: left; height: 250px; background: transparent; margin-left:100px">
-    <h1>About Us:</h1>
-    <p>This website was mainly created for project 1 in our CS 343 class.
-        We are creating this website as an ordering system, with seperate
-        screens for selecting and customizing orders, displaying sales information, etc.
-    </p>
-  </div>
-
-  <div style="width: 400px; float: left; height: 150px; background: transparent; margin-left:100px">
-    <h1>Open Hours:</h1>
+  <script>
+    let popup = document.getElementById("popup");
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+  
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+  </script>
+  <div class="footer">
+    <div style="width: 400px; float: left; height: 250px; background: transparent; margin-left:100px">
+      <h1>About Us:</h1>
+      <p>This website was mainly created for project 1 in our CS 343 class.
+          We are creating this website as an ordering system, with seperate
+          screens for selecting and customizing orders, displaying sales information, etc.
+      </p>
+    </div>
+  
+    <div style="width: 400px; float: left; height: 150px; background: transparent; margin-left:100px">
+      <h1>Open Hours:</h1>
+      <ul>
+        <li><strong>Monday: </strong> 10am - 9pm</li>
+        <li><strong>Tuesday: </strong> 10am - 9pm</li>
+        <li><strong>Wednesday: </strong> 10am - 9pm</li>
+        <li><strong>Thursday: </strong> 10am - 9pm</li>
+        <li><strong>Friday: </strong> 10am - 9pm</li>
+        <li><strong>Saturday: </strong> 10am - 5pm</li>
+        <li><strong>Sunday: </strong> Close</li>
+      </ul>
+    </div>
+  
+    <h1>Information</h1>
     <ul>
-      <li><strong>Monday: </strong> 10am - 9pm</li>
-      <li><strong>Tuesday: </strong> 10am - 9pm</li>
-      <li><strong>Wednesday: </strong> 10am - 9pm</li>
-      <li><strong>Thursday: </strong> 10am - 9pm</li>
-      <li><strong>Friday: </strong> 10am - 9pm</li>
-      <li><strong>Saturday: </strong> 10am - 5pm</li>
-      <li><strong>Sunday: </strong> Close</li>
+      <li><strong>Address: </strong> 800 S Main Street, VA, Harrisonburg, 22801</li>
+      <li><strong>Social Media: </strong> <a href="https://www.facebook.com/shi.duy.thien">www.OurMainPage.com</a></li>
+      <li><strong>Email @: </strong><a href="#Example.com">this_look_fake@gmail.com</a></li>
+      <li><strong>Phone number: </strong>123-456-7890</li>
     </ul>
   </div>
-
-  <h1>Information</h1>
-  <ul>
-    <li><strong>Address: </strong> 800 S Main Street, VA, Harrisonburg, 22801</li>
-    <li><strong>Social Media: </strong> <a href="https://www.facebook.com/shi.duy.thien">www.OurMainPage.com</a></li>
-    <li><strong>Email @: </strong><a href="#Example.com">this_look_fake@gmail.com</a></li>
-    <li><strong>Phone number: </strong>123-456-7890</li>
-  </ul>
-</div>
-
+</body>
 
 </html>
