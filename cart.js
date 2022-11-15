@@ -1,16 +1,23 @@
 {
-    var currentCartItem = new Array();
-    var currentCartPrice = new Array();
+    var currentCartItem = new Array(0);
+    var currentCartPrice = new Array(0);
+    var ourStorage = window.localStorage;
     
 }
 function updateCartItemBlueCheeseBurger() {
     var image = document.getElementById('Blue Cheese Burger');
-    document.getElementsByName
-   currentCartItem.push(image);
-   for(let i = 0; i < currentCartItem.length; i++){
-    console.log(currentCartItem[i]);
-    console.log(currentCartItem.length);
-}
+    var mine = document.getElementsByName(image);
+    ourStorage.setItem("team",mine); 
+        console.log(ourStorage.getItem("team"));
+    if(ourStorage.length == 0 ){
+        
+    }
+
+//    for(let i = 0; i < ourStorage.length; i++){
+//     console.log(ourStorage.getItem(i));
+//     console.log(ourStorage.getItem.length);
+// }
+return image;
 }
 function updateCartItemDoubleHamburger() {
     var image = document.getElementById('Double Hamburger');
@@ -22,14 +29,17 @@ function updateCartItemDoubleHamburger() {
 }
 }
 function updateCartBlueCheeseBurgerPrice() {
-    var image = document.getElementById('Blue Cheese Burger Price');
-    document.getElementsByName
-   currentCartPrice.push(image);
-   for(let i = 0; i < currentCartPrice.length; i++){
-    console.log(currentCartPrice[i]);
-    console.log(currentCartPrice.length);
-    
+var image = document.getElementById('Blue Cheese Burger Price');
+    document.getElementsByName(image);
+    if(ourStorage.length == 0 ){
+        ourStorage.setItem(0,image); 
+    }
+
+   for(let i = 0; i < ourStorage.length; i++){
+    console.log(ourStorage.getItem(i));
+    console.log(ourStorage.getItem.length);
 }
+return image;
 }
 function updateCartPrice() {
     var image = document.getElementById('ExpensivePrice');
@@ -40,6 +50,7 @@ function updateCartPrice() {
     console.log(currentCartPrice.length);
     
 }
+return image;
 }
 function updateCartItemDessert() {
     var image = met.getElementById('nameDessert');
@@ -60,11 +71,13 @@ function updateCartPriceDessert() {
     console.log(currentCartPrice.length);
     
 }
+return image;
 }
 function Storage(){
-    for(let i = 0; i < currentCartPrice.length; i++){
-    console.log(currentCartPrice[i]);
-    
+
+    for(let i = 0; i < ourStorage.length; i++){
+    console.log(ourStorage.getItem(i));
+   
 }
-    
 }
+
