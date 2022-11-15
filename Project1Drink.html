@@ -15,7 +15,7 @@
         .footer {
         margin-left: 0px;
         position: absolute; 
-        left: 0 ; right: 0; bottom: 1; 
+        left: 0 ; right: 0; bottom: -300px; 
         height:[footer-height];
         background-color: #f5bb33bf;
         }
@@ -37,7 +37,7 @@
 
         div.content {
           margin-left: 800px;
-          margin-bottom: 600xpx;
+          margin-bottom: 600px;
           width: 1500px;
           transform: translate(-50%, -110%);
           text-align: center;
@@ -54,6 +54,7 @@
           margin-top: 100px;
           margin-right: 13px;     
           border: solid;
+          width: 19%;
         }
 /* Pop Up*/
 .popup {
@@ -82,22 +83,18 @@
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
           background-color: rgb(0, 220, 29);
         }
-        #Soda {
-          width: 19%;
-        }
     </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel= "stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body style="background-color:white;">
-<!---------------------------------------------TOP BAR----------------------------------------------------->
 <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
   <a class="navbar-brand" href="Project1Home.html">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class= "navbar-toggler" type= "button" data-toggle= "collapse" data-target= "#navbarNav" aria-controls= "navbarNav" aria-expanded= "false" aria-label= "Toggle navigation">
+    <span class= "navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
+  <div class= "collapse navbar-collapse" id= "navbarNav">
+    <ul class= "navbar-nav">
+      <li class= "nav-item">
         <a class="nav-link" href="Project1MainSide.html">Main/Side <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -115,42 +112,42 @@
 <div class="bg-body"></div>
 
   <div class = "content">
-  <div id = "Soda" class = "parent">
-      <img src = "Sprite.jpg" width = "250px" height="200px" alt = "Sprite" onclick="openPopup()">
+  <div class = "parent">
+      <img src = "Sprite.jpg" width = "250" height="200" alt = "Sprite" onclick= "openPopup()">
       <p>Sprite 20oz: $2.00</p>
   </div>
-  <div id = "Soda" class = "parent">
-    <img src = "Coke.jpg" width = "200px" height="200px"alt = "Coke" onclick="openPopup()">
+  <div class = "parent">
+    <img src = "Coke.jpg" width = "200" height="200" alt = "Coke" onclick= "openPopup()">
     <p>Coke 20oz: $2.00</p>
 </div>
-<div id = "Soda" class = "parent">
-    <img src = "Faygo.jpeg" width = "200px" height="200px" alt = "Cotton Candy Faygo" onclick="openPopup()">
+<div class = "parent">
+    <img src = "Faygo.jpeg" width = "200" height= "200" alt = "Cotton Candy Faygo" onclick= "openPopup()">
     <p>Faygo 24z: $2.00</p>
 </div>
-<div id = "Soda" class = "parent">
-    <img src = "Fiji-Water.jpg" width = "200px" height="200px" alt = "Fiji Water" onclick="openPopup()">
+<div class = "parent">
+    <img src = "Fiji-Water.jpg" width = "200" height= "200" alt = "Fiji Water" onclick= "openPopup()">
     <p>Fiji Water 24oz: $2.00</p>
 </div>
-<div id = "Soda" class = "parent">
-    <img src = "GIngerale.png"width = "200px" height="200px" alt = "GIngerale" onclick="openPopup()">
+<div class = "parent">
+    <img src = "GIngerale.png" width = "200" height= "200" alt = "GIngerale" onclick= "openPopup()">
     <p>Shweppes GIngerale 20oz: $2.00</p>
 </div>
-<div id = "Soda" class = "parent">
-    <img src = "Mountain-Dew.jpg"width = "200px" height="200px" alt = "Mountain Dew" onclick="openPopup()">
+<div class = "parent">
+    <img src = "Mountain-Dew.jpg" width = "200" height= "200" alt = "Mountain Dew" onclick= "openPopup()">
     <p>MTN-DEW Major Melon 20oz: $2.00</p>
 </div>
-<div id = "Soda" class = "parent">
-    <img src = "Pepsi.png"width = "200px" height="200px" alt = "Pepsi" onclick="openPopup()">
+<div class = "parent">
+    <img src = "Pepsi.png" width = "200" height="200" alt = "Pepsi" onclick= "openPopup()">
     <p>Pepsi 20oz: $2.00</p>
 </div>
-<div id = "Soda" class = "parent">
-    <img src = "Orange-Juice.jpg"width = "200px" height="200px" alt = "Orange Juice" onclick="openPopup()">
+<div class = "parent">
+    <img src = "Orange-Juice.jpg" width = "200" height= "200" alt = "Orange Juice" onclick= "openPopup()">
     <p>Orange Juice 12oz: $2.00</p>
 </div>
 <div class="popup" id="popup">
-  <img src="check.png">
+  <img src="check.png" alt = "A check mark">
   <h2>Your Order Has Been Submitted</h2>
-  <button type="button" onclick="closePopup()">OK</button>
+  <button type= "button" onclick="closePopup()">OK</button>
 </div>
 </div>
 
