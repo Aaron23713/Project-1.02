@@ -13,11 +13,11 @@
       }
 
       /*Style for Footer of the Website*/
-        .footer {
-          margin-left: 0px;
-          position: absolute; 
-          left: 0 ; right: 0; bottom: 0; 
-          background-color:#f5bb33bf;
+      .footer {
+        margin-left: 0px;
+        position: absolute; 
+        left: 0 ; right: 0; bottom: -300px; 
+        background-color: #f5bb33bf;
         }
 
         .bg-body {
@@ -165,16 +165,7 @@
   <script src = "cart.js"></script>
   </div>
 
-  <script>
-    let popup = document.getElementById("popup");
-    function openPopup() {
-      popup.classList.add("open-popup");
-    }
-  
-    function closePopup() {
-      popup.classList.remove("open-popup");
-    }
-  </script>
+  <div class="footer">
     <div style="width: 400px; float: left; height: 250px; background: transparent; margin-left:100px">
       <h1>About Us:</h1>
       <p>This website was mainly created for project 1 in our CS 343 class.
@@ -184,8 +175,8 @@
     </div>
   
     <div style="width: 400px; float: left; height: 150px; background: transparent; margin-left:100px">
-      <h1>Open Hours:</h1>
-      <ul> 
+      <h1>Open hours:</h1>
+      <ul>
         <li><strong>Monday: </strong> 10am - 9pm</li>
         <li><strong>Tuesday: </strong> 10am - 9pm</li>
         <li><strong>Wednesday: </strong> 10am - 9pm</li>
@@ -203,10 +194,17 @@
       <li><strong>Email @: </strong><a href="#Example.com">this_look_fake@gmail.com</a></li>
       <li><strong>Phone number: </strong>123-456-7890</li>
     </ul>
-
-</body>   
- 
-
-
-
-</html>
+  </div>
+  
+  <script>
+    let popup = document.getElementById("popup");
+    function openPopup() {
+      popup.classList.add("open-popup");
+    }
+  
+    function closePopup() {
+      popup.classList.remove("open-popup");
+    }
+  </script>
+  </body>
+  </html>
